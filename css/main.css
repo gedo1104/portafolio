@@ -1,5 +1,4 @@
 
-
 *{
     margin:0;
     padding: 0;
@@ -8,13 +7,14 @@
 :root{
     --primary-color: #edf2fc;
     --secondary-color: #212121; 
-
-   
+    --aux-color: #f9f9f9;
 }
 
 .dark-theme{
     --primary-color: #212121;
     --secondary-color: #fff;
+    --aux-color: #2b2a2a;
+
 }
 
 #icon{
@@ -47,12 +47,24 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    /* z-index: 1;
+    display:flex;
+    text-transform: uppercase;
+    font-weight: 600;
+	letter-spacing: 2px;
+    position: fixed;
+	top: 0;
+	left: 0;
+    box-sizing: border-box;
+	padding: 10px 50px;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.05); */
 }
 
 
 .logo{
-    height: 5%;
-     width: 5%;
+    height: 2%;
+     width: 2%;
     cursor:pointer;
 }
 
@@ -79,6 +91,15 @@ nav ul li a:hover{
     font-size: 70px;
     color: var(--secondary-color);
 }
+
+.info .info-color{
+    color:#9D56AD;
+}
+
+.info h2{
+    font-size: 30px;
+    color: var(--secondary-color);
+}
 span{
     color: #9D56AD;
 }
@@ -102,7 +123,8 @@ span{
 .img-box{
     width: 45%;
     height: 80%;
-    position: absolute;
+    position: absolute; 
+    
     bottom: 0;
     right: 100px;
 }
@@ -143,10 +165,32 @@ span{
 }
 
 /* para las letras con efecto*/
-#main .peque{
+#main-descrip .peque{
     /*color: var(--secondary-color);*/
     font-family: 'Kaushan Script', cursive;
     font-size: 25px;
     text-align: left;
     margin-top: 0%;
 }
+
+
+
+/*****ABOUT******/
+#about{
+    background: var(--aux-color);
+    padding: 70px 0px 80px;
+    width:100%;
+	height: 100vh;
+    box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+.about-img{
+    width: 100px;
+    height: 100px;
+}
+
+
