@@ -1,3 +1,9 @@
+const btnToggle= document.querySelector('.toggle-btn');
+
+btnToggle.addEventListener('click', function(){
+	document.getElementById('sidebar').classList.toggle('active');
+});
+
 const typed = new Typed('.typed', {
 	strings: [
 		'<i >Developer</i>',
