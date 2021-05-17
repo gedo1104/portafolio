@@ -1,3 +1,4 @@
+
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -54,7 +55,7 @@ sr.reveal('.skills__img',{delay: 600});
 sr.reveal('.work__img',{interval: 200}); 
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__input',{interval: 200}); 
+// sr.reveal('.contact__input',{interval: 200}); 
 
 
 /*DARK MODE */

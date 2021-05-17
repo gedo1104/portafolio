@@ -299,10 +299,30 @@ img{
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
   color:var(--letra-color)
 }
-.skills__icon{
+.skills__icon-php, .skills__icon-express, .skills__icon-sql, .skills__icon-css{
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: var(--first-color);
+}
+.skills__icon-html, .skills__icon-angular, .skills__icon-laravel{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: #f05121;
+}
+.skills__icon-sass{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: #e9b8e6;
+}
+.skills__icon-js{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: #edf03a;
+}
+.skills__icon-node{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: #6eeb97;
 }
 .skills__names{
   display: flex;
@@ -319,28 +339,54 @@ img{
 }
 .skills__html{
   width: 95%;
+  
 }
 .skills__css{
-  width: 85%;
+  width: 90%;
+}
+.skills__sass{
+  width: 50%;
+  
 }
 .skills__js{
   width: 65%;
 }
-.skills__ux{
+.skills__php{
+  width: 80%;
+}
+.skills__laravel{
+  width: 70%;
+}
+.skills__node{
+  width: 60%;
+}
+.skills__mysql{
   width: 85%;
+}
+.skills__nosql{
+  width: 70%;
 }
 .skills__img{
   border-radius: .5rem;
 }
 
+
 /* ===== WORK =====*/
 .work__container{
   row-gap: 2rem;
+ 
 }
 .work__img{
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  box-shadow: 0 4px 25px rgba(180, 94, 206, 0.35);
   border-radius: .5rem;
   overflow: hidden;
+  text-align: justify;
+  
+}
+ .description-work{
+  margin:10px 30px;
+  padding:20px;
+  color: var(--letra-color);
 }
 .work__img img{
   transition: 1s;
@@ -477,3 +523,4 @@ img{
     right: 10%;
   }
 }
+
