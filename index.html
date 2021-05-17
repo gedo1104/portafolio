@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header class="">
+    <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#home" class="nav__logo">Gedo</a>
+                <!-- <a href="#home" class="nav__logo">Gedo</a> -->
+                <img src="img/logoGedrix.png" alt="" class="logo" id="logo">
+
             </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -21,12 +23,13 @@
                     <li class="nav__item">  <a href="#skills" class="nav__link">Skills</a> </li>
                     <li class="nav__item">  <a href="#work" class="nav__link">Work</a> </li>
                     <!-- <li class="nav__item">  <a href="#contact" class="nav__link">Contact</a> </li> -->
-                    <li class="nav__item"><img src="img/moon.png" id="icon"></li>
+                    <li class="nav__item"></li>
+                    <img src="img/moon.png" id="icon">
                 </ul>
                 
             </div>
             <div class="nav__toggle" id="nav-toggle">
-                <i class="fas fa-align-justify"></i>
+                <i class="fas fa-align-justify" style="color: rgb(175, 93, 208);"></i>
             </div>
         </nav>
     </header>
@@ -35,8 +38,8 @@
         <!--Home-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi, <br> I'am <span class="home__title-color">Gerardo Ramirez   </span><br> Developer Web</h1>
-                <a href="#" class="button">Contact</a>   
+                <h1 class="home__title">Hi, <br> I'am <span class="home__title-color">Gerardo Ramírez   </span><br> Developer Web</h1>
+                <a href="#" class="button">Download CV</a>   
             </div>
             <div class="home__social">
                 <a href="" class="home__social-icon"><i class="fab fa-twitter"></i></a>
@@ -58,8 +61,18 @@
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">I'am Gerardo</h2>
-                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit vel architecto ad quam voluptate consequuntur, necessitatibus asperiores molestias repellendus suscipit maiores ex nulla dignissimos, debitis dolores doloremque fugiat cumque?</p>
+                    <h2 class="about__subtitle">Hola..</h2>
+                    <p class="about__text">Soy Gerardo Ramírez, desarrollador web, actualmente vivo en Ecuador. 
+                        Como desarrollador me gusta trabajar con tecnologías en el back-end y 
+                        front-end, tambien me apasiona el trabajar con hardware como es arduino,
+                        ESP o Raspberry pi para realizar proyectos iOT.<br>
+                        
+                        Soy una persona que se considera autodidacta ya que me gusta reforzar 
+                        mis conocimientos y adquirir nuevos conocimientos.<br>
+                        
+                        Actualmente me encuentro en el aprendizaje de Node, GraphQL. <br>
+                        Dentro de mis pasantiempos me gusta la lectura, investigación y la música. 
+                    </p>
                 </div>
             </div>
         </section>
@@ -71,7 +84,10 @@
 
                     <div>
                         <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima consequuntur, beatae vero unde accusantium enim adipisci doloribus delectus expedita exercitationem molestiae nostrum et, corporis ut ipsum distinctio atque est!</p>
+                        <p class="skills__text">Los conocimientos adquiridos en mi vida profesional no solo se centran en el desarrollador de software
+                            sino tambien en la parte de harware con electronica manejando placas de desarrollo como: <span class="home__title-color">Arduino, ESP, raspberry</span>,
+                            mientras las tecnologias que manejo en el desarrollo web se lista a continuación:
+                        </p>
                         
                         <div class="skills__data">
                             <div class="skills__names">
@@ -79,7 +95,7 @@
                                 <span class="skills_name">HTML 5</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">85%</span>
+                                <span class="skills__pertenage">95%</span>
                             </div>
                             <div class="skills__bar skills__html"> </div>
                         </div>
@@ -97,8 +113,88 @@
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
+                                <i class="fab fa-sass skills__icon"></i>
+                                <span class="skills_name">SASS</span>
+                            </div>
+                            <div>
+                                <span class="skills__pertenage">85%</span>
+                            </div>
+                            <div class="skills__bar skills__js">  </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="fab fa-js skills__icon"></i>
+                                <span class="skills_name">JS</span>
+                            </div>
+                            <div>
+                                <span class="skills__pertenage">85%</span>
+                            </div>
+                            <div class="skills__bar skills__js">  </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="fab fa-angular skills__icon"></i>
+                                <span class="skills_name">Angular</span>
+                            </div>
+                            <div>
+                                <span class="skills__pertenage">85%</span>
+                            </div>
+                            <div class="skills__bar skills__js">  </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="fab fa-php skills__icon"></i>
+                                <span class="skills_name">PHP</span>
+                            </div>
+                            <div>
+                                <span class="skills__pertenage">85%</span>
+                            </div>
+                            <div class="skills__bar skills__js">  </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
                                 <i class="fab fa-laravel skills__icon"></i>
                                 <span class="skills_name">Laravel</span>
+                            </div>
+                            <div>
+                                <span class="skills__pertenage">85%</span>
+                            </div>
+                            <div class="skills__bar skills__js">  </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="fab fa-node skills__icon"></i>
+                                <span class="skills_name">Node</span>
+                            </div>
+                            <div>
+                                <span class="skills__pertenage">85%</span>
+                            </div>
+                            <div class="skills__bar skills__js">  </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="fas fa-code skills__icon"></i>
+                                <span class="skills_name">Express</span>
+                            </div>
+                            <div>
+                                <span class="skills__pertenage">85%</span>
+                            </div>
+                            <div class="skills__bar skills__js">  </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="fas fa-database skills__icon"></i>
+                                <span class="skills_name">MySQL</span>
+                            </div>
+                            <div>
+                                <span class="skills__pertenage">85%</span>
+                            </div>
+                            <div class="skills__bar skills__js">  </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="fas fa-database skills__icon"></i>
+                                <span class="skills_name">NoSQL</span>
                             </div>
                             <div>
                                 <span class="skills__pertenage">85%</span>
@@ -108,7 +204,7 @@
                     </div>
 
                     <div>
-                        <img src="img/job.jpg" alt="" class="skills__img">
+                        <img src="img/Web Developer_Isometric.png" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
