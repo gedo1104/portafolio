@@ -12,7 +12,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <!-- <a href="#home" class="nav__logo">Gedo</a> -->
+               
                 <img src="img/logoGedrix.png" alt="" class="logo" id="logo">
 
             </div>
@@ -42,9 +42,9 @@
                 <a href="#" class="button">Download CV</a>   
             </div>
             <div class="home__social">
-                <a href="https://twitter.com/gerardo441" class="home__social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/gedrix" class="home__social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.linkedin.com/in/gerardo-ramirez-0493/" class="home__social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/gerardo441" class="home__social-icon description-work"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/gerardo-ramirez-0493/" class="home__social-icon description-work"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/gedrix" class="home__social-icon description-work"><i class="fab fa-github"></i></a>
             </div>
             <div class="home__img">
                 <!-- <img src="img/gedo.png" alt="" style="width: 70%; height: 70%;"> -->
@@ -80,14 +80,21 @@
         <!--skills-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills </h2>
-                <div class="skills__container bd-grid">
+                <div class="bd-grid skills__container">
+                    <p class="skills__text">
+                        
+                        Los conocimientos adquiridos en mi vida profesional no solo se centran en el desarrollador de software
+                        sino tambien en la parte de harware con electronica manejando placas de desarrollo como: <span class="home__title-color">Arduino, ESP, raspberry</span>,
+                        mientras las tecnologias que manejo en el desarrollo web se lista a continuación:
+                    </p>
+                    <h2 class="skills__subtitle"><img src="img/Web Developer_Isometric.png" alt="" class="skills__img"></h2>
+                        
+                        
 
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Los conocimientos adquiridos en mi vida profesional no solo se centran en el desarrollador de software
-                            sino tambien en la parte de harware con electronica manejando placas de desarrollo como: <span class="home__title-color">Arduino, ESP, raspberry</span>,
-                            mientras las tecnologias que manejo en el desarrollo web se lista a continuación:
-                        </p>
+                </div>
+
+                <div class="skills__container bd-grid">
+                    <!-- <div> -->
                         
                         <div class="skills__data">
                             <div class="skills__names">
@@ -201,11 +208,11 @@
                             </div>
                             <div class="skills__bar skills__nosql">  </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
 
-                    <div>
+                    <!-- <div>
                         <img src="img/Web Developer_Isometric.png" alt="" class="skills__img">
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -220,6 +227,7 @@
                     <p class="description-work">Desarrollado con laravel 8 un blog autoadmnistrable</p>
                     <a href="http://buhotips.com/" class="home__social-icon description-work"><i class="fas fa-level-up-alt"></i></a>
                 </div>
+                
                 <div class="work__img">
                     <img src="img/eduquiz.PNG" alt="">
                     <h3 class="description-work">Eduquiz</h3>
@@ -259,20 +267,7 @@
             </div>
         </section>
 
-        <!--contact-->
-        <!-- <section class="contact section" id="contact">
-            <h2 class="section-title"> Contact </h2>
-            <div class="contact___container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="text" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                    <input type="button" value="Enviar" class="contact__button button">
-
-                </form>
-            </div>
-        </section> -->
+        
     </main>
     <!--FOOTER-->
     <footer class="footer">
