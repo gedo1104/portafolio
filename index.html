@@ -10,25 +10,24 @@
 </head>
 <body>
     <header class="l-header">
-        <nav class="nav bd-grid">
+        <nav class="nav base">
             <div>
                
                 <img src="img/logoGedrix.png" alt="" class="logo" id="logo">
 
             </div>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">  <a href="#home" class="nav__link active">Home</a> </li>
-                    <li class="nav__item">  <a href="#about" class="nav__link">About</a> </li>
-                    <li class="nav__item">  <a href="#skills" class="nav__link">Skills</a> </li>
-                    <li class="nav__item">  <a href="#work" class="nav__link">Work</a> </li>
-                    <!-- <li class="nav__item">  <a href="#contact" class="nav__link">Contact</a> </li> -->
-                    <li class="nav__item"></li>
+            <div class="menu" id="menu">
+                <ul class="ul-menu">
+                    <li class="menu-item">  <a href="#home" class="menu-link active">Home</a> </li>
+                    <li class="menu-item">  <a href="#about" class="menu-link">About</a> </li>
+                    <li class="menu-item">  <a href="#skills" class="menu-link">Skills</a> </li>
+                    <li class="menu-item">  <a href="#work" class="menu-link">Work</a> </li>
+                    <li class="menu-item"></li>
                     <img src="img/moon.png" id="icon">
                 </ul>
                 
             </div>
-            <div class="nav__toggle" id="nav-toggle">
+            <div class="nav-toggle" id="nav-toggle">
                 <i class="fas fa-align-justify" style="color: rgb(175, 93, 208);"></i>
             </div>
         </nav>
@@ -36,17 +35,17 @@
 
     <main class="l-main">
         <!--Home-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data" id="main-descrip">
-                <h1 class="home__title ">Hi, <br> I'am <span class="home__title-color">Gerardo Ramírez   </span ><br>Developer Web</h1>
+        <section class="home base" id="home">
+            <div class="home-base" id="main-descrip">
+                <h1 class="home-title">Hi, <br> I'am <span class="home-title-color">Gerardo Ramírez   </span ><br>Developer Web</h1>
                 <a href="#" class="button">Download CV</a>   
             </div>
-            <div class="home__social">
-                <a href="https://twitter.com/gerardo441" class="home__social-icon description-work"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/gerardo-ramirez-0493/" class="home__social-icon description-work"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/gedrix" class="home__social-icon description-work"><i class="fab fa-github"></i></a>
+            <div class="home-icon-social">
+                <a href="https://twitter.com/gerardo441" class="icon-social-home description-work"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/gerardo-ramirez-0493/" class="icon-social-home description-work"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/gedrix" class="icon-social-home description-work"><i class="fab fa-github"></i></a>
             </div>
-            <div class="home__img">
+            <div class="home-img">
                 <!-- <img src="img/gedo.png" alt="" style="width: 70%; height: 70%;"> -->
               <img src="img/image1426.png" alt="" >
             </div>
@@ -55,11 +54,10 @@
         <!--about-->
         <section class="about section" id="about">
             <h2 class="section-title">About me</h2>
-            <div class="about__container bd-grid">
-                <div class="about__img">
+            <div class="about-container base">
+                <div class="about-img">
                     <img src="img/job.jpg" alt="" >
                 </div>
-
                 <div>
                     <h2 class="about__subtitle">Hola..</h2>
                     <p class="about__text">Soy Gerardo Ramírez, desarrollador web, actualmente vivo en Ecuador. 
@@ -80,135 +78,129 @@
         <!--skills-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills </h2>
-                <div class="bd-grid skills__container">
-                    <p class="skills__text">
+                <div class="base skills-container">
+                    <p class="skills-text">
                         
                         Los conocimientos adquiridos en mi vida profesional no solo se centran en el desarrollador de software
                         sino tambien en la parte de harware con electronica manejando placas de desarrollo como: <span class="home__title-color">Arduino, ESP, raspberry</span>,
                         mientras las tecnologias que manejo en el desarrollo web se lista a continuación:
                     </p>
-                    <h2 class="skills__subtitle"><img src="img/Web Developer_Isometric.png" alt="" class="skills__img"></h2>
-                        
-                        
-
+                    <h2 class="skills-subtitle"><img src="img/Web Developer_Isometric.png" alt="" class="skills-img"></h2>
                 </div>
-
-                <div class="skills__container bd-grid">
-                    <!-- <div> -->
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
+                <div class="skills-container base">
+                    
+                        <div class="skills-header">
+                            <div class="skills-body">
                                 <i class="fab fa-html5 skills__icon-html"></i>
-                                <span class="skills_name">HTML 5</span>
+                                <span class="skills-name">HTML 5</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">95%</span>
+                                <span class="skills-rate">95%</span>
                             </div>
-                            <div class="skills__bar skills__html"> </div>
+                            <div class="skills-bar skills__html"> </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills-header">
+                            <div class="skills-body">
                                 <i class="fab fa-css3-alt skills__icon-css"></i>
-                                <span class="skills_name">CSS</span>
+                                <span class="skills-name">CSS</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">90%</span>
+                                <span class="skills-rate">90%</span>
                             </div>
-                            <div class="skills__bar skills__css">
+                            <div class="skills-bar skills__css">
                                 
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills-header">
+                            <div class="skills-body">
                                 <i class="fab fa-sass skills__icon-sass"></i>
-                                <span class="skills_name">SASS</span>
+                                <span class="skills-name">SASS</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">50%</span>
+                                <span class="skills-rate">50%</span>
                             </div>
-                            <div class="skills__bar skills__sass">  </div>
+                            <div class="skills-bar skills__sass">  </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills-header">
+                            <div class="skills-body">
                                 <i class="fab fa-js skills__icon-js"></i>
-                                <span class="skills_name">JS</span>
+                                <span class="skills-name">JS</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">65%</span>
+                                <span class="skills-rate">65%</span>
                             </div>
-                            <div class="skills__bar skills__js">  </div>
+                            <div class="skills-bar skills__js">  </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills-header">
+                            <div class="skills-body">
                                 <i class="fab fa-angular skills__icon-angular"></i>
-                                <span class="skills_name">Angular</span>
+                                <span class="skills-name">Angular</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">65%</span>
+                                <span class="skills-rate">65%</span>
                             </div>
-                            <div class="skills__bar skills__js">  </div>
+                            <div class="skills-bar skills__js">  </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills-header">
+                            <div class="skills-body">
                                 <i class="fab fa-php skills__icon-php"></i>
-                                <span class="skills_name">PHP</span>
+                                <span class="skills-name">PHP</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">80%</span>
+                                <span class="skills-rate">80%</span>
                             </div>
-                            <div class="skills__bar skills__php">  </div>
+                            <div class="skills-bar skills__php">  </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills-header">
+                            <div class="skills-body">
                                 <i class="fab fa-laravel skills__icon-laravel"></i>
-                                <span class="skills_name">Laravel</span>
+                                <span class="skills-name">Laravel</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">70%</span>
+                                <span class="skills-rate">70%</span>
                             </div>
-                            <div class="skills__bar skills__laravel">  </div>
+                            <div class="skills-bar skills__laravel">  </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills-header">
+                            <div class="skills-body">
                                 <i class="fab fa-node skills__icon-node"></i>
-                                <span class="skills_name">Node</span>
+                                <span class="skills-name">Node</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">60%</span>
+                                <span class="skills-rate">60%</span>
                             </div>
-                            <div class="skills__bar skills__node">  </div>
+                            <div class="skills-bar skills__node">  </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills-header">
+                            <div class="skills-body">
                                 <i class="fas fa-code skills__icon-express"></i>
-                                <span class="skills_name">Express</span>
+                                <span class="skills-name">Express</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">60%</span>
+                                <span class="skills-rate">60%</span>
                             </div>
-                            <div class="skills__bar skills__node">  </div>
+                            <div class="skills-bar skills__node">  </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills-header">
+                            <div class="skills-body">
                                 <i class="fas fa-database skills__icon-sql"></i>
-                                <span class="skills_name">MySQL</span>
+                                <span class="skills-name">MySQL</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">85%</span>
+                                <span class="skills-rate">85%</span>
                             </div>
-                            <div class="skills__bar skills__mysql">  </div>
+                            <div class="skills-bar skills__mysql">  </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills-header">
+                            <div class="skills-body">
                                 <i class="fas fa-database skills__icon-sql"></i>
-                                <span class="skills_name">NoSQL</span>
+                                <span class="skills-name">NoSQL</span>
                             </div>
                             <div>
-                                <span class="skills__pertenage">70%</span>
+                                <span class="skills-rate">70%</span>
                             </div>
-                            <div class="skills__bar skills__nosql">  </div>
+                            <div class="skills-bar skills__nosql">  </div>
                         </div>
-                    <!-- </div> -->
 
                     <!-- <div>
                         <img src="img/Web Developer_Isometric.png" alt="" class="skills__img">
@@ -220,62 +212,64 @@
 
         <section class="work section" id="work">
             <h2 class="section-title">work</h2>
-            <div class="work__container bd-grid ">
-                <div class="work__img">
+            <div class="work-container base ">
+                <div class="work-img">
                     <img src="img/buho.PNG" alt="">
                     <h3 class="description-work">Buho Tips</h3>
                     <p class="description-work">Desarrollado con laravel 8 un blog autoadmnistrable</p>
-                    <a href="http://buhotips.com/" class="home__social-icon description-work"><i class="fas fa-level-up-alt"></i></a>
+                    <a href="http://buhotips.com/" class="icon-social-home description-work"><i class="fas fa-level-up-alt"></i></a>
                 </div>
                 
-                <div class="work__img">
+                <div class="work-img">
                     <img src="img/eduquiz.PNG" alt="">
                     <h3 class="description-work">Eduquiz</h3>
                     <p class="description-work">Proyecto consiste en back-end elaborado con lumen, y una app desarrollada on unity, mi aporte fue en el lado del back-end</p>
-                    <a href="https://eduquiz.carbunco.com/" class="home__social-icon description-work"><i class="fas fa-level-up-alt"></i></a>
-                    <a href="https://github.com/gedrix/cocomo2proyecto" class="home__social-icon description-work"><i class="fab fa-github"></i></a>
+                    <a href="https://eduquiz.carbunco.com/" class="icon-social-home description-work"><i class="fas fa-level-up-alt"></i></a>
+                    <a href="https://github.com/gedrix/cocomo2proyecto" class="icon-social-home description-work"><i class="fab fa-github"></i></a>
                       
                 </div>
-                <div class="work__img">
+                <div class="work-img">
                     <img src="img/cocomo.png" alt="">
                     <h3 class="description-work">Cocomo 2</h3>
                     <p class="description-work">Realizado en php para estimar el costo de un proyecto de software, leerá las lineas de código que corresponde a proyectos cuyas extensiones sean 'php', 'java','js' y evitará leer lineas vacias o que tengan comentarios de esta forma /* */ # //</p>
-                    <a href="hhttps://github.com/gedrix/Eduquiz-V0" class="home__social-icon description-work"><i class="fab fa-github"></i></a>
+                    <a href="hhttps://github.com/gedrix/Eduquiz-V0" class="icon-social-home description-work"><i class="fab fa-github"></i></a>
                     
 
                 </div>
-                <div class="work__img">
+                <div class="work-img">
                     <img src="img/lading.png" alt="">
                     <h3 class="description-work">Proyectos front-End</h3>
                     <p class="description-work">Serie de mini proyectos para front-end, donde se realiza una lading cuenta regresiva, utilizar modo dark con scss y una lading haciendo uso de bootstrap</p>
-                    <a href="https://github.com/gedrix/ejm-frontEnd" class="home__social-icon description-work"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/gedrix/ejm-frontEnd" class="icon-social-home description-work"><i class="fab fa-github"></i></a>
 
                 </div>
-                <div class="work__img">
+                <div class="work-img">
                     <img src="img/galeria.PNG" alt="">
                     <h3 class="description-work">Galeria de imagenes</h3>
                     <p class="description-work">Desarrollado con node, express, ejs, bootstrap, donde un usuario puede gestionar sus imagenes</p>
-                    <a href="https://github.com/gedrix/pic" class="home__social-icon description-work"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/gedrix/pic" class="icon-social-home description-work"><i class="fab fa-github"></i></a>
 
                 </div>
-                <div class="work__img">
+                <div class="work-img">
                     <img src="img/portafolio.PNG" alt="">
                     <h3 class="description-work">Mi Portafolio</h3>
                     <p class="description-work">Proyecto desarrollado haciendo uso de HTML, CSS, JS</p>
-                    <a href="https://eduquiz.carbunco.com/" class="home__social-icon description-work"><i class="fas fa-level-up-alt"></i></a>
+                    <a href="https://eduquiz.carbunco.com/" class="icon-social-home description-work"><i class="fas fa-level-up-alt"></i></a>
                 </div>
             </div>
+           
         </section>
-
+        
         
     </main>
+    
     <!--FOOTER-->
     <footer class="footer">
-        <p class="footer__title">Gerardo Ramírez</p>
-        <div class="footer__social">
-                <a href="https://twitter.com/gerardo441" class="footer__social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/gedrix" class="footer__social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.linkedin.com/in/gerardo-ramirez-0493/" class="footer__social-icon"><i class="fab fa-github"></i></a>
+        <p class="footer-title">Gerardo Ramírez</p>
+        <div class="footer-social">
+                <a href="https://twitter.com/gerardo441" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/gedrix" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/gerardo-ramirez-0493/" class="footer-social-icon"><i class="fab fa-github"></i></a>
         </div>
         <p> &#169; 2021 copyright all right reserved</p>
     </footer>
