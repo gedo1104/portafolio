@@ -372,28 +372,28 @@ img{
 }
 
 
-/* ===== WORK =====*/
-.work-container{
+/* ===== project =====*/
+.project-container{
   row-gap: 2rem;
  
 }
-.work-img{
+.project-img{
   box-shadow: 0 4px 25px rgba(142, 149, 247, 0.35);
   border-radius: .5rem;
   overflow: hidden;
   text-align: justify;
   
 }
- .description-work{
+ .description-project{
   margin:10px 30px;
   padding:20px;
   color: var(--letra-color);
 }
-.work-img img{
+.project-img img{
   transition: 1s;
   cursor: pointer;
 }
-.work-img img:hover{
+.project-img img:hover{
   transform: scale(1.1);
 }
 
@@ -489,7 +489,7 @@ img{
   .about-img img{
     width: 300px;
   }
-  .work-container{
+  .project-container{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
     column-gap: 2rem;
@@ -507,3 +507,10 @@ img{
   }
 }
 
+#main-descrip .typed{
+  /*color: var(--secondary-color);*/
+  font-family: 'Kaushan Script', cursive;
+  font-size: 45px;
+  text-align: left;
+  margin-top: 0%;
+}

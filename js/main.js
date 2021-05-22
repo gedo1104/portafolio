@@ -1,3 +1,24 @@
+const typed = new Typed('.typed', {
+	strings: [
+		'<i >Developer Web</i>',
+	],
+
+	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+	typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
+	startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+	backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+	smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+	shuffle: false, // Alterar el orden en el que escribe las palabras.
+	backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+	loop: true, // Repetir el array de strings
+	loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+	showCursor: true, // Mostrar cursor palpitanto
+	cursorChar: '|', // Caracter para el cursor
+	contentType: 'html', // 'html' o 'null' para texto sin formato
+});
+
+
+
 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -34,16 +55,7 @@ const sr = ScrollReveal({
     reset: true
 });
 
-/*SCROLL HOME*/
-sr.reveal('.home-title',{}); 
-sr.reveal('.button',{delay: 200}); 
-sr.reveal('.home-img',{delay: 400}); 
-sr.reveal('.home-icon-social-icon',{ interval: 200}); 
 
-/*SCROLL ABOUT*/
-sr.reveal('.about-img',{}); 
-sr.reveal('.about__subtitle',{delay: 400}); 
-sr.reveal('.about__text',{delay: 400}); 
 
 /*SCROLL SKILLS*/
  sr.reveal('.skills-subtitle',{interval: 200}); 
@@ -51,8 +63,8 @@ sr.reveal('.skills-text',{interval: 200});
 sr.reveal('.skills-header',{interval: 200}); 
 sr.reveal('.skills-img',{delay: 600});
 
-/*SCROLL WORK*/
-sr.reveal('.work-img',{interval: 200}); 
+/*SCROLL project*/
+// sr.reveal('.project-img',{interval: 200}); 
 
 /*DARK MODE */
 var icon = document.getElementById("icon");
