@@ -24,7 +24,11 @@
                     <li class="menu-item">  <a href="#skills" class="menu-link">Skills</a> </li>
                     <li class="menu-item">  <a href="#project" class="menu-link">Projects</a> </li>
                     <li class="menu-item"></li>
+                    <li><button class="button-menu-in translate" id="en">English</button></li>
+                    <li> <button class=" button-menu-es translate" id="es">Español</button></li>
+                    <li class="menu-item"></li>
                     <img src="img/moon.png" id="icon">
+
                 </ul>
                 
             </div>
@@ -38,12 +42,15 @@
         <!--Home-->
         <section class="home base" id="home">
             <div class="home-base" id="main-descrip">
-                <h1 class="home-title ">Hi, <br> 
-                    I'am <span class=" home-title-color">
-                        Gerardo Ramírez
+                <h1 class="home-title" ><span class="lang" key="hi">Hi,</span> <br> 
+                    <span class="lang" key="soy">I'am </span>
+                    <span class=" home-title-color">
+                            Gerardo Ramírez
                         </span >
-                <br>  <span class="typed"></span></h1>
-                <a href="#" class="button">Download CV</a>   
+                        <br>  
+                    <span class="typed"></span>
+                </h1>
+                <a href="#" class="button lang" key="download">Download CV</a>   
             </div>
             <div class="home-icon-social">
                 <a href="https://twitter.com/gerardo441" class="icon-social-home description-project"><i class="fab fa-twitter"></i></a>
@@ -58,23 +65,33 @@
 
         <!--about-->
         <section class="about section" id="about">
-            <h2 class="section-title">About me</h2>
+            <h2 class="section-title  lang" key="about">About me</h2>
             <div class="about-container base">
                 <div class="about-img">
                     <img src="img/job.jpg" alt="" >
                 </div>
                 <div>
-                    <h2 class="about__subtitle">Hola..</h2>
-                    <p class="about__text">Soy Gerardo Ramírez, desarrollador web, actualmente vivo en Ecuador. 
-                        Como desarrollador me gusta trabajar con tecnologías en el back-end y 
-                        front-end, también me apasiona el trabajar con hardware como arduino,
-                        ESP o Raspberry pi para realizar proyectos iOT.<br>
-                        
-                        Soy una persona que se considera autodidacta, ya que refuerzo  
-                        mis conocimientos y adquiero nuevos constatemente.<br>
-                        
-                        Actualmente estoy enfocado en el aprendizaje de Node, GraphQL. <br>
-                        En mis tiempos libres disfruto de la lectura, investigación y la música. 
+                    <h2 class="about__subtitle lang" key="about-title">Hola..</h2>
+                    <p class="about__text" >
+                        <span class="lang" key="about-content-txt1">
+                            Soy Gerardo Ramírez, desarrollador web, actualmente vivo en Ecuador. 
+                            Como desarrollador me gusta trabajar con tecnologías en el back-end y 
+                            front-end, también me apasiona el trabajar con hardware como arduino,
+                            ESP o Raspberry pi para realizar proyectos iOT.
+                        </span>    
+                        <br>
+                        <span class="lang" key="about-content-txt2">
+                            Soy una persona que se considera autodidacta, ya que refuerzo  
+                            mis conocimientos y adquiero nuevos constatemente.
+                        </span>
+                        <br>
+                        <span class="lang" key="about-content-txt3">
+                            Actualmente estoy enfocado en el aprendizaje de Node, GraphQL.
+                        </span>
+                        <br>
+                        <span class="lang" key="about-content-txt4">
+                            En mis tiempos libres disfruto de la lectura, investigación y la música. 
+                        </span>
                     </p>
                 </div>
             </div>
@@ -82,13 +99,20 @@
 
         <!--skills-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Skills </h2>
+                <h2 class="section-title lang" key="skills">Skills </h2>
                 <div class="base skills-container">
                     <p class="skills-text">
-                        
-                        Los conocimientos adquiridos en mi vida profesional no solo se centran en el desarrollador de software
-                        sino también en la parte de harware, manejando placas de desarrollo como: <span class="home-title-color">Arduino, ESP, raspberry</span>;
-                        Mientras las tecnologías que manejo en el desarrollo web se lista a continuación:
+                        <span class="lang" key="skill-content-txt1">
+                            Los conocimientos adquiridos en mi vida profesional no solo se centran en el desarrollador de software
+                        </span>
+                        <span class="lang" key="skill-content-txt2">
+                            sino también en la parte de harware, utilizando placas de desarrollo como:
+                        </span>
+                        <span class="home-title-color">Arduino, ESP, raspberry</span>;
+
+                        <span class="lang" key="skill-content-txt3">
+                            Mientras las tecnologías que manejo en el desarrollo web se lista a continuación:
+                        </span>
                     </p>
                     <h2 class="skills-subtitle"><img src="img/Web Developer_Isometric.png" alt="" class="skills-img"></h2>
                 </div>
@@ -216,19 +240,19 @@
         <!--project-->
 
         <section class="project section" id="project">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title lang" key="projects">Projects</h2>
             <div class="project-container base ">
                 <div class="project-img">
                     <img src="img/buho.PNG" alt="">
                     <h3 class="description-project">Buho Tips</h3>
-                    <p class="description-project">Desarrollado con laravel 8 un blog autoadmnistrable</p>
+                    <p class="description-project lang" key="project-buho">Desarrollado con laravel 8 un blog admnistrable</p>
                     <a href="http://buhotips.com/" class="icon-social-home description-project"><i class="fas fa-level-up-alt"></i></a>
                 </div>
                 
                 <div class="project-img">
                     <img src="img/eduquiz.PNG" alt="">
                     <h3 class="description-project">Eduquiz</h3>
-                    <p class="description-project">Proyecto consiste en back-end elaborado con lumen, y una app desarrollada on unity, mi aporte fue en el lado del back-end</p>
+                    <p class="description-project  lang" key="project-eduquiz">Proyecto consiste en back-end elaborado con lumen, y una app desarrollada on unity, mi aporte fue en el lado del back-end</p>
                     <a href="https://eduquiz.carbunco.com/" class="icon-social-home description-project"><i class="fas fa-level-up-alt"></i></a>
                     <a href="https://github.com/gedrix/cocomo2proyecto" class="icon-social-home description-project"><i class="fab fa-github"></i></a>
                 </div>
@@ -236,50 +260,50 @@
                 <div class="project-img">
                     <img src="img/cocomo.png" alt="">
                     <h3 class="description-project">Cocomo 2</h3>
-                    <p class="description-project">Realizado en php para estimar el costo de un proyecto de software, leerá las lineas de código que corresponde a proyectos cuyas extensiones sean 'php', 'java','js' y evitará leer lineas vacias o que tengan comentarios de esta forma /* */ # //</p>
+                    <p class="description-project lang" key="project-cocomo">Realizado en php para estimar el costo de un proyecto de software, leerá las líneas de código que corresponde a proyectos cuyas extensiones sean 'php', 'java','js' y evitará leer líneas vacias o que tengan comentarios de esta forma /* */ # //</p>
                     <a href="hhttps://github.com/gedrix/Eduquiz-V0" class="icon-social-home description-project"><i class="fab fa-github"></i></a>
                     
 
                 </div>
                 <div class="project-img">
                     <img src="img/lading.png" alt="">
-                    <h3 class="description-project">Proyectos front-End</h3>
-                    <p class="description-project">Serie de mini proyectos para front-end, donde se realiza una lading cuenta regresiva, utilizar modo dark con scss y una lading haciendo uso de bootstrap</p>
+                    <h3 class="description-project lang" key="project-front-title">Proyectos front-End</h3>
+                    <p class="description-project lang" key="project-front">Serie de mini proyectos para front-end, donde se realiza una lading cuenta regresiva. modo dark con scss, una lading haciendo uso de bootstrap</p>
                     <a href="https://github.com/gedrix/ejm-frontEnd" class="icon-social-home description-project"><i class="fab fa-github"></i></a>
 
                 </div>
                 <div class="project-img">
                     <img src="img/galeria.PNG" alt="">
-                    <h3 class="description-project">Galeria de imagenes</h3>
-                    <p class="description-project">Desarrollado con node, express, ejs, bootstrap, donde un usuario puede gestionar sus imagenes</p>
+                    <h3 class="description-project lang" key="project-galeria-title">Galería de imagenes</h3>
+                    <p class="description-project lang" key="project-galeria">Desarrollado con node, express, ejs, bootstrap para que un usuario pueda gestionar sus imagenes</p>
                     <a href="https://github.com/gedrix/pic" class="icon-social-home description-project"><i class="fab fa-github"></i></a>
 
                 </div>
                 <div class="project-img">
                     <img src="img/portafolio.PNG" alt="">
-                    <h3 class="description-project">Mi Portafolio</h3>
-                    <p class="description-project">Proyecto desarrollado haciendo uso de HTML, CSS, JS</p>
+                    <h3 class="description-project lang" key="project-portafolio-title">Mi Portafolio</h3>
+                    <p class="description-project lang" key="project-portafolio">Proyecto desarrollado haciendo uso de HTML, CSS, JS</p>
                     <a href="https://gedrix.github.io/portafolio/" class="icon-social-home description-project"><i class="fas fa-level-up-alt"></i></a>
                 </div>
 
                 <div class="project-img">
                     <img src="img/bpm.jpg" alt="">
                     <h3 class="description-project">Oximetro</h3>
-                    <p class="description-project">Proyecto desarrollado con arduino para poder obtener el ritmo cárdiaco de una persona</p>
+                    <p class="description-project lang" key="project-oximetro">Proyecto desarrollado con arduino para poder obtener el ritmo cárdiaco de una persona</p>
                     <!-- <a href="https://eduquiz.carbunco.com/" class="icon-social-home description-project"><i class="fas fa-level-up-alt"></i></a> -->
                 </div>
 
                 <div class="project-img">
                     <img src="img/orus.PNG" alt="">
                     <h3 class="description-project">OrusDent</h3>
-                    <p class="description-project">Colaborador en el proyecto OrusDent desarrollando parte del back-end</p>
+                    <p class="description-project lang" key="project-orus">Colaborador en el proyecto OrusDent desarrollando parte del back-end en laravel</p>
                     <a href="http://orusdent.com/" class="icon-social-home description-project"><i class="fas fa-level-up-alt"></i></a>
                 </div>
 
                 <div class="project-img">
                     <img src="img/tesis.PNG" alt="">
-                    <h3 class="description-project">Tutorias</h3>
-                    <p class="description-project">Proyecto realizado en trabajo de titulación construido con lumen de laravel en el lado del back-end y angular en el lado del front-end</p>
+                    <h3 class="description-project lang" key="project-tutorias-title">Tutorías</h3>
+                    <p class="description-project lang" key="project-tutorias">Proyecto realizado en trabajo de titulación construido con lumen de laravel en el lado del back-end y angular en el lado del front-end</p>
                     <!-- <a href="https://eduquiz.carbunco.com/" class="icon-social-home description-project"><i class="fas fa-level-up-alt"></i></a> -->
                 </div>
 
@@ -298,17 +322,18 @@
                 <a href="https://github.com/gedrix" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://www.linkedin.com/in/gerardo-ramirez-0493/" class="footer-social-icon"><i class="fab fa-github"></i></a>
         </div>
-        <p> &#169; 2021 copyright all right reserved</p>
+        <p class="lang" key="derechos"> &#169; 2021 copyright all right reserved</p>
     </footer>
+
+
     <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -257,6 +257,22 @@ img{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
 }
 
+.button-menu-es{
+  display: inline-block;
+  background-color: #72e215;
+  color: #fff;
+  padding: .25rem 2 rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+}
+.button-menu-in{
+  display: inline-block;
+  background-color: #f3a531;
+  color: #fff;
+  padding: .25rem 2 rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+}
 /* ===== ABOUT =====*/
 .about-container{
   row-gap: 2rem;
@@ -510,7 +526,7 @@ img{
 #main-descrip .typed{
   /*color: var(--secondary-color);*/
   font-family: 'Kaushan Script', cursive;
-  font-size: 45px;
+  font-size: 35px;
   text-align: left;
   margin-top: 0%;
 }
