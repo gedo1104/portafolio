@@ -7,8 +7,12 @@
 
 /*===== Colores =====*/
 :root{
-  --first-color: #4070F4;
+  /* --first-color: #4070F4;
   --second-color: #0E2431;
+  --fondo-color: #edf2fc;
+  --footer-color: #edf2fc; */
+  --first-color: #00bbf9  ;
+  --second-color: #0E2431  ;
   --fondo-color: #edf2fc;
   --footer-color: #edf2fc;
 }
@@ -155,7 +159,7 @@ img{
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color: #8e94f2;
     transition: .5s;
   }
 }
@@ -178,11 +182,9 @@ img{
   top: 2rem;
   background-color: var(--first-color);
 }
-.nav__logo{
-  color: var(--second-color);
-}
+
 .nav-toggle{
-  color: var(--second-color);
+  color: #8e94f2;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -230,8 +232,10 @@ img{
 .icon-social-home{
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.7rem;
-  color: var(--second-color);
+  font-size: 1.9rem;
+  color: var(--letra-color);
+
+  
 }
 .icon-social-home:hover{
   color: var(--first-color);
@@ -253,22 +257,22 @@ img{
   border-radius: .5rem;
 }
 .button:hover{
-  background: rgba(142, 149, 247, 0.35);
+  background:#00f5d4;
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
 }
 
 .button-menu-es{
   display: inline-block;
-  background-color: #72e215;
-  color: #fff;
+  background-color: #00f5d4;
+  color: rgb(15, 15, 15);
   padding: .25rem 2 rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
 .button-menu-in{
   display: inline-block;
-  background-color: #f3a531;
-  color: #fff;
+  background-color: #fee440;
+  color: rgb(15, 15, 15);
   padding: .25rem 2 rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
