@@ -8,10 +8,7 @@
 
 /*===== Colores =====*/
 :root{
-  /* --first-color: #4070F4;
-  --second-color: #0E2431;
-  --fondo-color: #edf2fc;
-  --footer-color: #edf2fc; */
+  
   --first-color: #00bbf9  ;
   --second-color: #0E2431  ;
   --fondo-color: #edf2fc;
@@ -25,7 +22,7 @@
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
-  --letra-color: rgb(3, 3, 3);
+  --letra-color: #212121;
 
 }
 @media screen and (min-width: 768px){
@@ -134,7 +131,6 @@ img{
   margin-right: var(--mb-2);
 }
 .l-header{
-  
   width: 100%;
   position: fixed;
   top: 0;
@@ -142,7 +138,6 @@ img{
   z-index: var(--z-fixed);
   background-color: var(--fondo-color);
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
-  
 
 }
 
@@ -285,6 +280,7 @@ img{
   border-radius: .5rem;
 }
 /* ===== ABOUT =====*/
+
 .about-container{
   row-gap: 2rem;
   text-align: center;
@@ -334,35 +330,56 @@ img{
   margin-right: var(--mb-2);
   color: var(--first-color);
 }
-.skills__icon-html, .skills__icon-angular, .skills__icon-laravel{
+.skills__icon-html, .skills__icon-angular, .skills__icon-laravel, .skills__icon-git{
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: #f05121;
 }
+.skill-red{
+  background-color:#f05121;;
+}
+
 .skills__icon-sass{
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: #e9b8e6;
+}
+.skill-sass{
+  background-color:#e9b8e6;
 }
 .skills__icon-js{
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: #edf03a;
 }
+
+.skill-js{
+  background-color:#edf03a;
+}
+
 .skills__icon-node{
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: #6eeb97;
 }
+.skill-node{
+  background-color:#6eeb97;
+}
+.skill-blue{
+  background-color: #185edf;
+}
+
+
 .skills-body{
   display: flex;
   align-items: center;
+ 
 }
 .skills-bar{
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--first-color);
+  
   height: .25rem;
   border-radius: .5rem;
   z-index: var(--z-back);
@@ -396,8 +413,13 @@ img{
 .skills__nosql{
   width: 70%;
 }
+.skills__icon-git{
+  width: 60%;
+}
+
 .skills-img{
   border-radius: .5rem;
+  
 }
 
 
@@ -492,6 +514,7 @@ img{
 
   .home{
     height: 100vh;
+  
   }
   .home__data{
     align-self: flex-end;
