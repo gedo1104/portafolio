@@ -47,24 +47,7 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-/*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
-});
 
-
-
-/*SCROLL SKILLS*/
- sr.reveal('.skills-subtitle',{interval: 200}); 
-sr.reveal('.skills-text',{interval: 200}); 
-sr.reveal('.skills-header',{interval: 200}); 
-sr.reveal('.skills-img',{delay: 600});
-
-/*SCROLL project*/
-// sr.reveal('.project-img',{interval: 200}); 
 
 /*DARK MODE */
 var icon = document.getElementById("icon");
