@@ -325,7 +325,7 @@ img{
   box-shadow: 0 4px 25px rgba(142, 149, 247, 0.35);
   color:var(--letra-color)
 }
-.skills__icon-php, .skills__icon-express, .skills__icon-sql, .skills__icon-css{
+.skills__icon-php, .skills__icon-express, .skills__icon-sql, .skills__icon-css, .skills__icon-comunicacion{
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: var(--first-color);
@@ -352,12 +352,27 @@ img{
   margin-right: var(--mb-2);
   color: #edf03a;
 }
+.skills__icon-problems{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: #e7a413;
+}
+.skills__icon-adaptacion{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: #ab0fe9;
+}
+.skills__icon-organizado{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: #15bedb;
+}
 
 .skill-js{
   background-color:#edf03a;
 }
 
-.skills__icon-node{
+.skills__icon-node, .skills__icon-equipo{
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: #6eeb97;
@@ -368,7 +383,16 @@ img{
 .skill-blue{
   background-color: #185edf;
 }
+.skill-naranja{
+  background-color: #e7a413;
+}
+.skill-morado{
+  background-color: #9f2be2;
+}
 
+.skill-azul-claro{
+  background-color: #15bedb;
+}
 
 .skills-body{
   display: flex;
@@ -396,7 +420,7 @@ img{
   
 }
 .skills__js{
-  width: 65%;
+  width: 50%;
 }
 .skills__php{
   width: 80%;
@@ -405,13 +429,13 @@ img{
   width: 70%;
 }
 .skills__node{
-  width: 60%;
+  width: 50%;
 }
 .skills__mysql{
-  width: 85%;
+  width: 75%;
 }
 .skills__nosql{
-  width: 70%;
+  width: 60%;
 }
 .skills__icon-git{
   width: 60%;
@@ -422,7 +446,30 @@ img{
   
 }
 
+.skills__creativdad{
+  width: 70%;
+}
 
+.skills__equipo {
+  width: 90%;
+}
+.skills__comunicacion{
+  width: 90%;
+
+}
+
+.skills__problemas{
+  width: 60%;
+
+}
+
+.skills__adaptacion{
+  width: 70%;
+}
+.skills__organizado{
+  width: 80%;
+
+}
 /* ===== project =====*/
 .project-container{
   row-gap: 2rem;
