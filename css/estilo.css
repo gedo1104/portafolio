@@ -425,6 +425,9 @@ img{
 .skills__php{
   width: 80%;
 }
+.skills__c{
+  width: 50%;
+}
 .skills__laravel{
   width: 70%;
 }
