@@ -21,6 +21,7 @@
   --content-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
+  --h3-font-size: 1.00rem;
   --normal-font-size: 0.938rem;
   --letra-color: #212121;
 
@@ -29,6 +30,7 @@
   :root{
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
+    --h3-font-size: 1.60rem;
     --normal-font-size: 1.1rem;
   }
 }
@@ -115,6 +117,15 @@ img{
   top: 2rem;
   background-color: var(--first-color);
 }
+.section-subtitle{
+  position: relative;
+  font-size: var(--h3-font-size);
+  color: var(--letra-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+
 .section{
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -409,39 +420,35 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 95%;
+  width: 100%;
   
 }
 .skills__css{
-  width: 90%;
-}
-.skills__sass{
-  width: 50%;
-  
+  width: 100%;
 }
 .skills__js{
-  width: 50%;
+  width: 100%;
 }
 .skills__php{
-  width: 80%;
+  width: 100%;
 }
 .skills__c{
-  width: 50%;
+  width: 100%;
 }
 .skills__laravel{
-  width: 70%;
+  width: 100%;
 }
 .skills__node{
-  width: 50%;
+  width: 100%;
 }
 .skills__mysql{
-  width: 75%;
+  width: 100%;
 }
 .skills__nosql{
-  width: 60%;
+  width: 100%;
 }
 .skills__icon-git{
-  width: 60%;
+  width: 100%;
 }
 
 .skills-img{
