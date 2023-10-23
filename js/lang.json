@@ -7,14 +7,14 @@
       "about-title": "Hola..",
       "about-content-txt1": "Soy Gerardo Ramírez, desarrollador web, actualmente vivo en Ecuador.  Como desarrollador me gusta trabajar con tecnologías en el back-end y front-end, también me apasiona el trabajar con hardware como arduino,ESP o Raspberry pi para realizar proyectos iOT.",
       "about-content-txt2":" Soy una persona que se considera autodidacta, ya que refuerzo  mis conocimientos y adquiero nuevos constatemente.",
-      "about-content-txt3":"Actualmente estoy enfocado en el aprendizaje de Node, GraphQL.",
+      "about-content-txt3":"Actualmente estoy enfocado en el aprendizaje de de Dart y Flutter.",
       "about-content-txt4":"En mis tiempos libres disfruto de la lectura, investigación y la música. ",
       "skills":"Habilidades",
       "skill-content-txt1":"Los conocimientos adquiridos en mi vida profesional no solo se centran en el desarrollador de software",
       "skill-content2-txt1":" A lo largo de la vida profesional se va adquiriendo capacidades y las mismas lograr",
       "skill-content-txt2":" sino también en la parte de harware, utilizando placas de desarrollo como:",
       "kill-content2-txt2":"poner en practica todos los conocimientos, habilidades y valores en el campo de especialización.",
-      "skill-content-txt3":"Mientras las tecnologías que manejo en el desarrollo web se lista a continuación:",
+      "skill-content-txt3":"Mientras las tecnologías que manejo como desarrollador se lista a continuación:",
       "kill-content2-txt3":"A continuación se lista las habilidades profesionales:",
       "projects":"Proyectos",
       "project-buho":"Desarrollado con laravel 8 un blog admnistrable",
@@ -30,7 +30,12 @@
       "project-orus":"Colaborador en el proyecto OrusDent desarrollando parte del back-end en laravel",
       "project-tutorias-title":"Tutorías",
       "project-tutorias":"Proyecto realizado en trabajo de titulación construido con lumen de laravel en el lado del back-end y angular en el lado del front-end",
-      "derechos":"2021 copyright todos los derechos reservados"
+      "derechos":"2021 copyright todos los derechos reservados",
+      "lenguaje": "Lenguajes de programación",
+      "db":"Base de datos",
+      "herramientas":"Otras Herramientas"
+
+
 
     },
     "en":{
@@ -41,14 +46,14 @@
       "about-title": "Hi..",
       "about-content-txt1": "I'm Gerardo Ramirez, web developer, currently living in Ecuador. As a developer I like to work with back-end and front-end technologies, I am also passionate about working with hardware such as arduino, ESP or Raspberry pi to make iOT projects.",
       "about-content-txt2":"I am a person who considers myself self-taught, since I reinforce my knowledge and my knowledge and acquire new ones constantly.",
-      "about-content-txt3":"I actually am focused on learning Node, GraphQL.",
+      "about-content-txt3":"I actually am focused on learningde Dart and Flutter.",
       "about-content-txt4":"In my free time I enjoy reading, research and music. ",
       "skills":"Skills",
       "skill-content-txt1":" The knowledge I have acquired in my professional life is not only focused on the software developer.",
       "skill-content2-txt1":"Throughout one's professional life, one acquires skills and these skills can be achieved by ",
       "skill-content-txt2":" but also on the hardware side, using development boards such as:",
       "skill-content2-txt2":"to put into practice all the knowledge, skills and values in the field of specialization.",
-      "skill-content-txt3":"While the technologies I handle in web development are listed below:",
+      "skill-content-txt3":"While the technologies that I manage as a developer are listed below:",
       "skill-content2-txt3":"Professional skills are listed below:",
       "projects":"Projects",
       "project-buho":"Developed with laravel 8 a manageable blog",
@@ -64,7 +69,10 @@
       "project-orus":"Collaborator in the OrusDent project developing part of the back-end in laravel.",
       "project-tutorias-title":"Tutorials",
       "project-tutorias":"Project realized as a degree work built with laravel lumen on the back-end side and angular on the front-end side.",
-      "derechos":"2021 copyright all right reserved"
+      "derechos":"2021 copyright all right reserved",
+      "lenguaje": "Programming language",
+      "db":"Data Base",
+      "herramientas":"Other Tools"
 
     }
   }

@@ -6,10 +6,10 @@
   --font-semi: 600;
 }
 
-/*===== Colores =====*/
+/*===== Colores ===== 00bbf9*/
 :root{
   
-  --first-color: #00bbf9  ;
+  --first-color: #1eb6e2   ;
   --second-color: #0E2431  ;
   --fondo-color: #edf2fc;
   --footer-color: #edf2fc;
@@ -17,7 +17,7 @@
 
 /*===== Fuente y tipografia =====*/
 :root{
-  --body-font: 'Courier Prime', monospace;
+  --body-font: 'Poppins', monospace;
   --content-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
@@ -55,9 +55,9 @@
 
 .dark-theme{
 
-  --fondo-color: #212121;
-  --letra-color: #fff;
-  --footer-color: #212121;
+  --fondo-color: #0c132a;
+  --letra-color: #eeeded;
+  --footer-color: #0c132a;
 
 }
 
@@ -335,6 +335,9 @@ img{
   border-radius: .5rem;
   box-shadow: 0 4px 25px rgba(142, 149, 247, 0.35);
   color:var(--letra-color)
+}
+.skills__icon{
+  color: #eae2c0 ;
 }
 .skills__icon-php, .skills__icon-express, .skills__icon-sql, .skills__icon-css, .skills__icon-comunicacion{
   font-size: 2rem;
@@ -629,3 +632,4 @@ img{
   text-align: left;
   margin-top: 0%;
 }
+
