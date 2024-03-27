@@ -460,27 +460,27 @@ img{
 }
 
 .skills__creativdad{
-  width: 70%;
+  width: 100%;
 }
 
 .skills__equipo {
-  width: 90%;
+  width: 100%;
 }
 .skills__comunicacion{
-  width: 90%;
+  width: 100%;
 
 }
 
 .skills__problemas{
-  width: 60%;
+  width: 100%;
 
 }
 
 .skills__adaptacion{
-  width: 70%;
+  width: 100%;
 }
 .skills__organizado{
-  width: 80%;
+  width: 100%;
 
 }
 /* ===== project =====*/
@@ -615,6 +615,7 @@ img{
 
 }
 
+
 @media screen and (min-width: 1024px){
   .base{
     margin-left: auto;
@@ -623,6 +624,8 @@ img{
   .home-img{
     right: 10%;
   }
+
+  
 }
 
 #main-descrip .typed{
