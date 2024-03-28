@@ -20,20 +20,19 @@
       "project-buho":"Desarrollado con laravel 8 un blog admnistrable",
       "project-eduquiz":"Proyecto consiste en back-end elaborado con lumen, y una app desarrollada on unity, mi aporte fue en el lado del back-end",
       "project-cocomo":"Realizado en php para estimar el costo de un proyecto de software, leerá las líneas de código que corresponde a proyectos cuyas extensiones sean 'php', 'java','js' y evitará leer líneas vacias o que tengan comentarios de esta forma /* */ # //",
-      "project-front-title":"Proyectos front-End",
-      "project-front":"Serie de mini proyectos para front-end, donde se realiza una lading cuenta regresiva, utilizar modo dark con scss y una lading haciendo uso de bootstrap",
       "project-galeria-title":"Galería de imagenes",
       "project-galeria":"Desarrollado con node, express, ejs, bootstrap para que un usuario pueda gestionar sus imagenes",
       "project-portafolio-title":"Mi Portafolio",
       "project-portafolio":"Proyecto desarrollado haciendo uso de HTML, CSS, JS",
       "project-oximetro":"Proyecto desarrollado con arduino para poder obtener el ritmo cárdiaco de una persona",
-      "project-orus":"Colaborador en el proyecto OrusDent desarrollando parte del back-end en laravel",
-      "project-tutorias-title":"Tutorías",
-      "project-tutorias":"Proyecto realizado en trabajo de titulación construido con lumen de laravel en el lado del back-end y angular en el lado del front-end",
       "derechos":"2021 copyright todos los derechos reservados",
       "lenguaje": "Lenguajes de programación",
       "db":"Base de datos",
-      "herramientas":"Otras Herramientas"
+      "herramientas":"Otras Herramientas",
+      "project-apiPelicula":"Creación de  API RESTfull con Autenticación JWT y .NET Identity usando ASP.NET 7 (.NET Core)",
+      "project-apiPelicula-title":"Api peliculas",
+      "project-cloncines-title":"Clon cines",
+      "project-cloncines":"Creación clon de cines utilizando Flutter dark y con información obtenida de THE_MOVIE_DB"
 
 
 
@@ -59,20 +58,19 @@
       "project-buho":"Developed with laravel 8 a manageable blog",
       "project-eduquiz":"Project consists of a back-end elaborated with lumen, and an app developed on unity, my contribution was on the back-end side.",
       "project-cocomo":"Performed in php to estimate the cost of a software project, it will read the lines of code corresponding to projects whose extensions are 'php', 'java', 'js' and will avoid reading empty lines or lines with comments like this /* */ # // //",
-      "project-front-title":"Projects front-End",
-      "project-front":"Series of mini projects for front-end, where a lading countdown is made. dark mode with scss, a lading using bootstrap.",
       "project-galeria-title":"Image gallery",
       "project-galeria":"Developed with node, express, ejs, bootstrap so that a user can manage his images.",
       "project-portafolio-title":"My Portfolio",
       "project-portafolio":"Project developed using HTML, CSS, JS",
       "project-oximetro":"Project developed with arduino to obtain the heart rate of a person.",
-      "project-orus":"Collaborator in the OrusDent project developing part of the back-end in laravel.",
-      "project-tutorias-title":"Tutorials",
-      "project-tutorias":"Project realized as a degree work built with laravel lumen on the back-end side and angular on the front-end side.",
       "derechos":"2021 copyright all right reserved",
       "lenguaje": "Programming language",
       "db":"Data Base",
-      "herramientas":"Other Tools"
+      "herramientas":"Other Tools",
+      "project-apiPelicula":"Creating RESTfull API with JWT Authentication and .NET Identity using ASP.NET 7 (.NET Core)",
+      "project-apiPelicula-title":"Movie Api",
+      "project-cloncines-title":"Clone cinemas",
+      "project-cloncines":"Creation of clone of cinemas using Flutter dark and with information obtained from THE_MOVIE_DB"
 
     }
   }

@@ -422,93 +422,180 @@ img{
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-.skills__html{
-  width: 100%;
-  
-}
-.skills__css{
-  width: 100%;
-}
-.skills__js{
-  width: 100%;
-}
-.skills__php{
-  width: 100%;
-}
-.skills__c{
-  width: 100%;
-}
-.skills__laravel{
-  width: 100%;
-}
-.skills__node{
-  width: 100%;
-}
-.skills__mysql{
-  width: 100%;
-}
-.skills__nosql{
-  width: 100%;
-}
-.skills__icon-git{
-  width: 100%;
-}
+
 
 .skills-img{
   border-radius: .5rem;
   
 }
 
-.skills__creativdad{
+.slash_100{
   width: 100%;
 }
 
-.skills__equipo {
-  width: 100%;
-}
-.skills__comunicacion{
-  width: 100%;
-
-}
-
-.skills__problemas{
-  width: 100%;
-
-}
-
-.skills__adaptacion{
-  width: 100%;
-}
-.skills__organizado{
-  width: 100%;
-
-}
 /* ===== project =====*/
 .project-container{
   row-gap: 2rem;
   
 }
-.project-img{
-  box-shadow: 0 4px 25px rgba(142, 149, 247, 0.35);
-  border-radius: .5rem;
-  overflow: hidden;
-  text-align: justify;
-  
-}
- .description-project{
-  margin:10px 30px;
-  padding:20px;
+
+.description-project{
+  margin:1px 30px;
+  padding:8px;
   color: var(--letra-color);
 }
-.project-img img{
-  transition: 1s;
-  cursor: pointer;
-}
-.project-img img:hover{
-  transform: scale(1.1);
+.description-project-tags{
+  margin:1px 30px;
+  padding:8px;
+  color: var(--letra-color);
 }
 
+.card-project{
+  max-width:65vw;
+  margin: 48px auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid rgb(204, 194, 194);
+  overflow: hidden;
+  /* height: 200px; */
+}
 
+.contenido-project {
+   display: flex; 
+}
+
+.izq {
+  width: 20%;
+}
+.derecho{
+  width: 80%;
+}
+.project-img img {
+  width: 100%;
+  height:100%;
+  border-style: none;
+
+}
+.cs-tag {
+  font-size: 0.8rem;
+  line-height: 2.0rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  border-radius: 3.125rem;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.cs-tag-rojo::before {
+  /* background color */
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #f53900;
+  opacity: .6;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.cs-tag-azul::before {
+  /* background color */
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #185edf;
+  opacity: .6;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.cs-tag-verde::before {
+  /* background color */
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #6eeb97;
+  opacity: .6;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.cs-tag-naranja::before {
+  /* background color */
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #e7a413;
+  opacity: .6;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.cs-tag-morado::before {
+  /* background color */
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #9f2be2;
+  opacity: .6;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.cs-tag-lila::before {
+  /* background color */
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #e9b8e6;
+  opacity: .6;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.cs-tag-amarillo::before {
+  /* background color */
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #edf03a;
+  opacity: .6;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.cs-tag-morado2::before {
+  /* background color */
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #4d0de4;
+  opacity: .6;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 /* ===== FOOTER =====*/
 .footer{
@@ -612,7 +699,9 @@ img{
     grid-template-rows: repeat(2,1fr);
     column-gap: 2rem;
   }
-
+  
+  
+  
 }
 
 
@@ -625,8 +714,26 @@ img{
     right: 10%;
   }
 
-  
+
 }
+
+@media(max-width:640px){
+  .contenido-project {
+    display: block; 
+ }
+ 
+ .izq {
+  width: 100%;
+  }
+  .description-project-tags{
+    margin:1px;
+  }
+  .description-project{
+    margin:1px;
+  }
+}
+
+
 
 #main-descrip .typed{
   /*color: var(--secondary-color);*/
