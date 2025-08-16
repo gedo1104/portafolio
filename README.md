@@ -1,5 +1,5 @@
 # Portafolio
-## https://gedrix.github.io/portafolio/
+## https://gedo1104.github.io/portafolio
 
 ## Comenzando 🚀
 Este es un proyecto de un portafolio personal
@@ -11,4 +11,4 @@ Landing Page
 * Resposive
 * Modo dark
 * Idioma Ingles - Español
-* Secciones {Home - About - Skills }
+
