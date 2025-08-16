@@ -1,571 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerardo Ramirez</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Gerardo Ramírez</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  
+  
+ 
 </head>
-<body>
-    <header class="l-header">
-        <nav class="nav base">
-            <div>
-               
-                <img src="img/logoGedrix.png" alt="" class="logo" id="logo">
+<body class="bg-white dark:bg-black text-black dark:text-white font-sans transition-colors duration-500">
 
-            </div>
-            <div class="menu" id="menu">
-                <ul class="ul-menu">
-                    <li class="menu-item">  <a href="#home" class="menu-link active">Home</a> </li>
-                    <li class="menu-item">  <a href="#about" class="menu-link">About</a> </li>
-                    <li class="menu-item">  <a href="#skills" class="menu-link">Skills</a> </li>
-                    <li class="menu-item">  <a href="#project" class="menu-link">Projects</a> </li>
-                    <li class="menu-item"></li>
-                    <li><button class="button-menu-in translate" id="en">English</button></li>
-                    <li class="menu-item"></li>
-                    <li> <button class=" button-menu-es translate" id="es">Español</button></li>
-                    <li class="menu-item"></li>
-                    <img src="img/moon.png" id="icon">
+  <!-- HEADER -->
+  <header class="max-w-6xl mx-auto p-6 bg-gray-100 dark:bg-neutral-900 rounded-2xl text-center shadow-lg relative">
+    <!-- Botón Dark/Light -->
+    <button id="theme-toggle" 
+            class="absolute top-4 right-4 bg-indigo-500 text-white px-3 py-1 rounded-lg text-sm hover:bg-indigo-600 transition">
+      ☀️ / 🌙
+    </button>
 
-                </ul>
-                
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <i class="fas fa-align-justify" ></i>
-            </div>
-        </nav>
-    </header>
+    <div class="flex flex-col items-center">
+      <!-- Avatar -->
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" 
+           alt="Avatar" 
+           class="w-28 h-28 rounded-full border-4 border-indigo-500 shadow-lg avatar-animate mb-4">
+      
+      <h1 class="text-3xl font-bold">
+        Hi, I'm <span class="text-indigo-500">Gerardo Ramírez</span>
+      </h1>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">
+        Software Engineer | Developer web | JavaScript | c# | .net | Angular | docker
+      </p>
+      <a href="mailto:correo@ejemplo.com" 
+         class="mt-4 inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-2 rounded-xl transition">
+         Contact Me
+      </a>
+    </div>
+  </header>
 
-    <main class="l-main">
-        <!--Home-->
-        <section class="home base" id="home">
-            <div class="home-base" id="main-descrip">
-                <h1 class="home-title" ><span class="lang" key="hi">Hi, </span>👋 <br> 
-                    <span class="lang" key="soy">I'am </span>
-                    <span class=" home-title-color">
-                            Gerardo A. Ramírez 
-                        </span >
-                        <br>  
-                    <span class="typed"></span>
-                </h1>
-                <a href="img/garm.pdf" class="button lang" key="download">Descargar CV</a>   
-            </div>
-            <div class="home-icon-social">
-                <a href="https://twitter.com/gerardo11041" class="icon-social-home description-project"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/gerardo-ramirez-0493/" class="icon-social-home description-project"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/gedrix" class="icon-social-home description-project"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="home-img">
-                <!-- <img src="img/gedo.png" alt="" style="width: 70%; height: 70%;"> -->
-              <img src="img/image1426.png" alt="" >
-            </div>
-        </section>
-       
-        <!--about-->
-        <section class="about section" id="about">
-            <h2 class="section-title  lang" key="about">Sobre mí</h2>
-            <div class="about-container base">
-                <div class="about-img">
-                    <img src="img/job.jpg" alt="" >
-                </div>
-                <div>
-                    <h2 class="about__subtitle lang" key="about-title">Hola..</h2>
-                    <p class="about__text" >
-                        <span class="lang" key="about-content-txt1">
-                            Soy desarrollador web con experiencia en front-end y back-end, que  reside en  Ecuador, me especializo en el uso de tecnologías para la creación de sitios web. Soy una persona autodidacta, constantemente reforzando mis conocimientos y adquiriendo nuevas habilidades. Actualmente, estoy enfocado en el aprendizaje de Dart y Flutter, dos tecnologías importantes para el desarrollo de aplicaciones móviles. En mi tiempo libre, disfruto de la lectura, la investigación y la música.
-                        </span>    
-                        <br>
-                        <span class="lang" key="about-content-txt2">
-                            Soy una persona que se considera autodidacta, ya que refuerzo  
-                            mis conocimientos y adquiero nuevos constatemente.
-                        </span>
-                        <br>
-                        <span class="lang" key="about-content-txt3">
-                            Actualmente estoy enfocado en el aprendizaje de Dart y Flutter.
-                        </span>
-                        <br>
-                        <span class="lang" key="about-content-txt4">
-                            En mis tiempos libres disfruto de la lectura, investigación y la música. 
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </section>
+  <!-- MAIN GRID -->
+  <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 p-6 transition-colors">
+    <!-- LEFT COLUMN -->
+    <section class="md:col-span-2 space-y-6">
+      <!-- About -->
+      <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg">
+        <h2 class="text-xl font-semibold text-indigo-500 mb-2">About Me</h2>
+        <p class="text-gray-700 dark:text-gray-300">
+          I am an Ecuadorian systems engineer specializing in web development with experience in both front-end and back-end. I focus on creating websites using modern technologies, applying best practices in architecture and optimization.
+As a self-taught professional, I engage in continuous learning, reinforcing my knowledge and exploring new tools. I am currently delving into Dart and Flutter, key technologies for developing cross-platform mobile applications.
+In my free time, I enjoy reading, technological research, and music, activities that complement my creative and analytical approach.
+          <br>
+            My tools of choice: <span class="font-medium">JavaScript, Angular, SQL Server.</span>
+        </p>
+      </div>
 
-        <!--skills-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title lang" key="skills">Habilidades </h2>
-                <div class="base skills-container-header">
-                    <p class="skills-text">
-                        <span class="lang" key="skill-content-txt1">
-                            Los conocimientos adquiridos en mi vida profesional no solo se centran en el desarrollador de software
-                        </span>
-                        <span class="lang" key="skill-content-txt2">
-                            sino también en la parte de harware, utilizando placas de desarrollo como:
-                        </span>
-                        <span class="home-title-color">Arduino, ESP, raspberry</span>;
+      <!-- Experience -->
+      <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg">
+        <h2 class="text-xl font-semibold text-indigo-500 mb-2">Experience</h2>
+        <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-1">
+          <li><strong>Developer Web</strong> — 2021 - Present
+            <span class="block text-sm text-gray-500 dark:text-gray-400">
+              I have participated in multiple web application development projects focused on business management, covering key modules such as payroll, human resources administration, vacation requests, and tax forms for the SRI (Ecuador).
+              I have also contributed to the migration of client-server systems to modern web platforms, improving the scalability, accessibility, and maintenance of solutions.
+              My contribution has included front-end and back-end design and development, database management, and application deployment in production environments, applying best practices in development and optimization.
+            </span>
+          </li>
 
-                        <span class="lang" key="skill-content-txt3">
-                            Mientras las tecnologías que manejo como desarrollador se lista a continuación: 
-                        </span>
-                    </p>
-                    <h2 class="skills-subtitle"><img src="img/Web Developer_Isometric.png" alt="" class="skills-img"></h2>
-                </div>
-                <!-- <section class="skills section" > -->
-                    <h2 class="section-subtitle lang" key="lenguaje">Lenguajes de programación</h2>
-                <!-- </section> -->
-                <div class="skills-container base">
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fab fa-php skills__icon-php"></i>
-                            <span class="skills-name">PHP</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100">  </div>
-                    </div>
+          <li><strong>Freelance Software Developer</strong> — 2019 2021
+            <span class="block text-sm text-gray-500 dark:text-gray-400">
+              I have participated in the development of specialized web applications, including an online music sales platform aimed at DJs, as well as a system for dentists focused on patient management, schedules, and medical records.
+            </span>
+          </li>
+        </ul>
+      </div>
 
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fab fa-js skills__icon-js"></i>
-                            <span class="skills-name">JS</span>
-                        </div>
-                       
-                        <div class="skills-bar skill-js slash_100">  </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-code skills__icon-php"></i>
-                            <span class="skills-name">C#</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100">  </div>
-                    </div>
+      <!-- Studies -->
+      <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg">
+        <h2 class="text-xl font-semibold text-indigo-500 mb-2">Studies</h2>
+        <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-1">
+          <li><strong>National University of Loja, Ecuador</strong> — Systems Engineering</li>
+          <li><strong>Mundos E</strong> — Diplomado DevOps</li>
+          <li><strong>José Ochoa León Higher Technological Institute of Pasaje, Ecuador</strong> — Systems Analysis Technologists</li>
+        </ul>
+      </div>
 
-                </div>
+      <!-- Projects -->
+      <!-- <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg">
+        <h2 class="text-xl font-semibold text-indigo-500 mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-gray-200 dark:bg-neutral-800 p-4 rounded-xl shadow-md hover:scale-105 transition transform">
+            <h3 class="text-lg font-bold">Dynamic Form Builder</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mt-2">
+              Angular app that loads forms dynamically from database and updates in real-time.
+            </p>
+            <a href="#" class="text-indigo-500 text-sm mt-3 inline-block">View Project →</a>
+          </div>
 
-                <h2 class="section-subtitle lang" >FrontEnd Developer</h2>
-                <div class="skills-container base">
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fab fa-angular skills__icon-angular"></i>
-                            <span class="skills-name">Angular</span>
-                        </div>
-                        
-                        <div class="skills-bar skill-red  slash_100">  </div>
-                    </div>
-
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fab fa-angular skills__icon-angular"></i>
-                            <span class="skills-name">AngularJS</span>
-                        </div>
-                        
-                        <div class="skills-bar skill-red  slash_100">  </div>
-                    </div>
-
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fab fa-html5 skills__icon-html"></i>
-                            <span class="skills-name">HTML 5</span>
-                        </div>
-                        <div class="skills-bar skill-red slash_100"> </div>
-                    </div>
-
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fab fa-css3-alt skills__icon-css"></i>
-                            <span class="skills-name">CSS</span>
-                        </div>
-                        <!-- <div>
-                            <span class="skills-rate">90%</span>
-                        </div> -->
-                        <div class="skills-bar skill-blue slash_100">
-                            
-                        </div>
-                    </div>
-
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fab fa-bootstrap skills__icon-css"></i>
-                            <span class="skills-name">BOOTSTRAP</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100"> </div>
-                    </div>      
-
-
-                </div>
-
-                <h2 class="section-subtitle lang" >BackEnd Developer</h2>
-
-                <div class="skills-container base">
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fab fa-laravel skills__icon-laravel"></i>
-                            <span class="skills-name">Laravel</span>
-                        </div>
-                        <div class="skills-bar skill-red  slash_100">  </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fab fa-node skills__icon-node"></i>
-                            <span class="skills-name">Node</span>
-                        </div>
-                        <div class="skills-bar skill-node slash_100">  </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-code skills__icon-express"></i>
-                            <span class="skills-name">Express</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100">  </div>
-                    </div>
-                </div>
-
-                
-                <h2 class="section-subtitle lang" >Mobile App Development</h2>
-
-                <div class="skills-container base">
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-code skills__icon-php"></i>
-                            <span class="skills-name">Dart</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100">  </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-code skills__icon-php"></i>
-                            <span class="skills-name">flutter</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100">  </div>
-                    </div>
-
-
-                </div>
-                
-
-                <h2 class="section-subtitle lang" key="db">Base de datos</h2>
-
-                <div class="skills-container base">
-                    
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-database skills__icon-sql"></i>
-                            <span class="skills-name">MySQL</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100">  </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-database skills__icon-sql"></i>
-                            <span class="skills-name">NoSQL</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100">  </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-database skills__icon-sql"></i>
-                            <span class="skills-name">PL/SQL</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100">  </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-database skills__icon-sql"></i>
-                            <span class="skills-name">Oracle SQL</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100">  </div>
-                    </div>    
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-database skills__icon-sql"></i>
-                            <span class="skills-name">SQL Server</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100">  </div>
-                    </div>                 
-                </div>
-                
-                <h2 class="section-subtitle lang"  key="herramientas">Otras Herramientas</h2>
-                <div class="skills-container base">
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fab fa-git-alt skills__icon-git"></i>
-                            <span class="skills-name">Git</span>
-                        </div>
-                        <div class="skills-bar skill-red slash_100">  </div>
-                    </div> 
-                </div>
-
-
-                <div class="base skills-container-header">
-                    <h2 class="skills2-subtitle"><img src="img/Progress _Monochromatic.png" alt="" class="skills-img"></h2>
-                    <p class="skills-text">
-                        <span class="lang" key="skill-content2-txt1">
-                             A lo largo de la vida profesional se va adquiriendo capacidades y las mismas lograr  
-                        </span>
-                        <span class="lang" key="skill-content2-txt2">
-                            poner en practica todos los conocimientos, habilidades y valores en el campo de especialización.
-                        </span>
-                        <span class="lang" key="skill-content2-txt3">
-                            A continuación se lista las habilidades profesionales:
-                        </span>
-                    </p>
-                   
-                </div>
-                
-                <div class="skills-container base">
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-briefcase skills__icon-equipo"></i>
-                            <span class="skills-name">Trabajo en Equipo</span>
-                        </div>
-                        <div class="skills-bar skill-node slash_100"> </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="far fa-address-card skills__icon-comunicacion"></i>
-                            <span class="skills-name">Comunicación</span>
-                        </div>
-                        <div class="skills-bar skill-blue slash_100"> </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fab fa-medapps skills__icon-js"></i>
-                            <span class="skills-name">Creatividad</span>
-                        </div>
-                        <div class="skills-bar skill-js slash_100"> </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="far fa-times-circle skills__icon-problems"></i>
-                            <span class="skills-name">Resolución de problemas</span>
-                        </div>
-                        <div class="skills-bar skill-naranja slash_100"> </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-head-side-virus skills__icon-adaptacion"></i>
-                            <span class="skills-name">Capacidad de adaptación</span>
-                        </div>
-                        <div class="skills-bar skill-morado slash_100"> </div>
-                    </div>
-                    <div class="skills-header">
-                        <div class="skills-body">
-                            <i class="fas fa-sitemap skills__icon-organizado"></i>
-                            <span class="skills-name">Organizado</span>
-                        </div>
-
-                        <div class="skills-bar skill-azul-claro slash_100"> </div>
-                    </div>
-                </div>
-            </section>
-
-        <!--project-->
-
-        <section class="project section" id="project">
-            <h2 class="section-title lang" key="projects">Proyectos</h2>
-            <div class="project-container card-project ">
-                <div class="contenido-project">
-                    <div class="izq">
-                        <div class="project-img">
-                            <img src="img/0.png" alt="">
-                           
-                        </div>
-                    </div>
-                    <div class="derecho">
-                        <h3 class="description-project">Buho Tips</h3>
-                            <p class="description-project-tags lang">
-                                <span class="cs-tag cs-tag-rojo">HTML</span>
-                                <span class="cs-tag cs-tag-azul">CSS</span>
-                                <span class="cs-tag cs-tag-rojo">Laravel</span>
-                            </p>
-                            <p class="description-project lang" key="project-buho">Desarrollado con laravel 8 un blog admnistrable</p>
-
-                            <a href="http://buhotips.com/" class="icon-social-home description-project"><i class="fas fa-link"></i></a>    
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="project-container card-project ">
-                <div class="contenido-project">
-                    <div class="izq">
-                        <div class="project-img">
-                            <img src="img/1.png" alt="">
-                           
-                        </div>
-                    </div>
-                    <div class="derecho">
-                        <h3 class="description-project">Eduquiz</h3>
-                            <p class="description-project-tags lang">
-                                <span class="cs-tag cs-tag-rojo">HTML</span>
-                                <span class="cs-tag cs-tag-azul">CSS</span>
-                                <span class="cs-tag cs-tag-rojo">Laravel</span>
-                            </p>
-                            <p class="description-project lang" key="project-eduquiz">Proyecto consiste en back-end elaborado con lumen, y una app desarrollada on unity, mi aporte fue en el lado del back-end</p>
-                            
-                            <a href="https://github.com/gedrix/Eduquiz-V0" class="icon-social-home description-project"><i class="fab fa-github"></i></a>
-                            
-                            <a href="https://www.researchgate.net/publication/342626363_EQ-EduQuiz_Juego_serio_para_el_reforzamiento_del_aprendizaje" class="icon-social-home"><i class="far fa-clipboard"></i></a>   
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-container card-project ">
-                <div class="contenido-project">
-                    <div class="izq">
-                        <div class="project-img">
-                            <img src="img/2.png" alt="">
-                           
-                        </div>
-                    </div>
-                    <div class="derecho">
-                        <h3 class="description-project">Cocomo 2</h3>
-                            <p class="description-project-tags lang">
-                                <span class="cs-tag cs-tag-rojo">HTML</span>
-                                <span class="cs-tag cs-tag-azul">CSS</span>
-                                <span class="cs-tag cs-tag-morado">PHP</span>
-                            </p>
-                            <p class="description-project lang" key="project-cocomo">Realizado en php para estimar el costo de un proyecto de software, leerá las líneas de código que corresponde a proyectos cuyas extensiones sean 'php', 'java','js' y evitará leer líneas vacias o que tengan comentarios de esta forma /* */ # //</p>
-                            
-                            <a href="https://github.com/gedrix/cocomo2proyecto" class="icon-social-home description-project"><i class="fab fa-github"></i></a>    
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-container card-project ">
-                <div class="contenido-project">
-                    <div class="izq">
-                        <div class="project-img">
-                            <img src="img/0.png" alt="">
-                           
-                        </div>
-                    </div>
-                    <div class="derecho">
-                        <h3 class="description-project lang" key="project-apiPelicula-title">Api Peliculas</h3>
-                            <p class="description-project-tags lang">
-                                <span class="cs-tag cs-tag-rojo">ASP.NET</span>
-                                <span class="cs-tag cs-tag-azul">C#</span>
-
-                            </p>
-                            <p class="description-project lang" key="project-apiPelicula">Creación de  API RESTfull con Autenticación JWT y .NET Identity usando ASP.NET 7 (.NET Core) </p>
-                            
-                            <a href="https://github.com/gedrix/ApiPelicula" class="icon-social-home description-project"><i class="fab fa-github"></i></a>  
-                    </div>
-                </div>
-            </div>
-            <div class="project-container card-project ">
-                <div class="contenido-project">
-                    <div class="izq">
-                        <div class="project-img">
-                            <img src="img/1.png" alt="">
-                           
-                        </div>
-                    </div>
-                    <div class="derecho">
-                        <h3 class="description-project lang" key="project-cloncines-title">Clon cines</h3>
-                            <p class="description-project-tags lang">
-                                <span class="cs-tag cs-tag-azul">Flutter</span>
-                                <span class="cs-tag cs-tag-morado">Dark</span>
-
-                            </p>
-                            <p class="description-project lang" key="project-cloncines">Creación clon de cines utilizando Flutter dark y con información obtenida de THE_MOVIE_DB </p>
-                            
-                            <a href="https://github.com/gedrix/ApiPelicula" class="icon-social-home description-project"><i class="fab fa-github"></i></a>  
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-container card-project ">
-                <div class="contenido-project">
-                    <div class="izq">
-                        <div class="project-img">
-                            <img src="img/2.png" alt="">
-                           
-                        </div>
-                    </div>
-                    <div class="derecho">
-                        <h3 class="description-project lang" key="project-galeria-title">Galería de imagenes</h3>
-                            <p class="description-project-tags lang">
-                                <span class="cs-tag cs-tag-azul">NODE</span>
-                                <span class="cs-tag cs-tag-verde">EXPRESS</span>
-                                <span class="cs-tag cs-tag-morado">BOOTSTRAP</span>
-                            </p>
-                            <p class="description-project lang" key="project-galeria">Desarrollado con node, express, ejs, bootstrap para que un usuario pueda gestionar sus imagenes</p>
-                            
-                            <a href="https://github.com/gedrix/pic" class="icon-social-home description-project"><i class="fab fa-github"></i></a>      
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-container card-project ">
-                <div class="contenido-project">
-                    <div class="izq">
-                        <div class="project-img">
-                            <img src="img/0.png" alt="">
-                           
-                        </div>
-                    </div>
-                    <div class="derecho">
-                        <h3 class="description-project lang" key="project-portafolio-title">Mi Portafolio</h3>
-                            <p class="description-project-tags lang">
-                                <span class="cs-tag cs-tag-rojo">HTML</span>
-                                <span class="cs-tag cs-tag-azul">CSS</span>
-                                <span class="cs-tag cs-tag-amarillo">JS</span>
-                            </p>
-                            <p class="description-project lang" key="project-portafolio">Proyecto desarrollado haciendo uso de HTML, CSS, JS</p>
-                            
-                            <a href="https://gedrix.github.io/portafolio/" class="icon-social-home description-project"><i class="fab fa-github"></i></a>      
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-container card-project ">
-                <div class="contenido-project">
-                    <div class="izq">
-                        <div class="project-img">
-                            <img src="img/bpm.jpg" alt="">
-                           
-                        </div>
-                    </div>
-                    <div class="derecho">
-                        <h3 class="description-project">Oximetro</h3>
-                            <p class="description-project-tags lang">
-                                <span class="cs-tag cs-tag-morado2">Arduino</span>
-                            </p>
-                            <p class="description-project lang" key="project-oximetro">Proyecto desarrollado con arduino para poder obtener el ritmo cárdiaco de una persona</p>
-                            
-                            <!-- <a href="https://gedrix.github.io/portafolio/" class="icon-social-home description-project"><i class="fab fa-github"></i></a>       -->
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        
-        
-    </main>
-    
-<!-- https://www.youtube.com/watch?v=hvRbgMNL3Q8 -->
-    <!--FOOTER -->
-    <footer class="footer">
-        <p class="footer-title">Gerardo Ramírez</p>
-        <div class="footer-social">
-                
-                <a href="https://twitter.com/gerardo11041" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/gedrix" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.linkedin.com/in/gerardo-ramirez-0493/" class="footer-social-icon"><i class="fab fa-github"></i></a>
+          <div class="bg-gray-200 dark:bg-neutral-800 p-4 rounded-xl shadow-md hover:scale-105 transition transform">
+            <h3 class="text-lg font-bold">DevOps Pipelines</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mt-2">
+              Automated CI/CD pipelines with Docker, Kubernetes and GitHub Actions.
+            </p>
+            <a href="#" class="text-indigo-500 text-sm mt-3 inline-block">View Project →</a>
+          </div>
         </div>
-        <p class="lang" key="derechos"> &#169; 2021 copyright all right reserved</p>
-    </footer>
+      </div> -->
+    </section>
+
+    <!-- RIGHT COLUMN -->
+    <aside class="space-y-6">
+      <!-- CV -->
+      <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg text-center">
+        <h2 class="text-xl font-semibold text-indigo-500 mb-2">Curriculum Vitae</h2>
+        <p class="text-gray-700 dark:text-gray-300">Download my CV here:</p>
+        <a href="#" 
+           class="mt-4 inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-2 rounded-xl transition">
+           Download CV
+        </a>
+      </div>
+      <!-- Skills -->
+<div class="backdrop-blur-md bg-white/20 dark:bg-black/30 rounded-2xl p-6 shadow-lg border border-white/30">
+  <h2 class="text-xl font-semibold text-indigo-500 mb-4">Skills</h2>
+  
+  <!-- Lenguajes -->
+  <div class="mb-4">
+    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Languages</h3>
+    <ul class="flex flex-wrap gap-2 mt-2 text-sm">
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        JavaScript
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        TypeScript
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        C#
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Dart
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        PHP
+      </li>
+    </ul>
+  </div>
+
+  <!-- Frameworks -->
+  <div class="mb-4">
+    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Frameworks</h3>
+    <ul class="flex flex-wrap gap-2 mt-2 text-sm">
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Angular
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Node.js
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Flutter
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Express
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        tailwind css
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        .NET
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Laravel
+      </li>
+    </ul>
+  </div>
+  <!-- Bases de datos -->
+  <div class="mb-4">
+    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Data Bases</h3>
+    <ul class="flex flex-wrap gap-2 mt-2 text-sm">
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Sql Server
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Mysql
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Postgres
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Oracle Sql
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        MOngoDB
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        PL/SQL - Oracle - Forms
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- Tools -->
+  <div>
+    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Tools</h3>
+    <ul class="flex flex-wrap gap-2 mt-2 text-sm">
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        GitHub
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Docker
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Azure Devops
+      </li>
+      <li class="px-3 py-1 rounded-lg bg-white/20 dark:bg-white/10 border border-white/30 text-indigo-500 backdrop-blur-md shadow-md transition transform hover:scale-105 hover:bg-indigo-500 hover:text-white">
+        Jira
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <!-- Contact -->
+      <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg">
+        <h2 class="text-xl font-semibold text-indigo-500 mb-2">Contact</h2>
+        <p class="text-gray-700 dark:text-gray-300">
+          Email: <a href="mailto:correo@ejemplo.com" class="text-indigo-500">gedo.rm04@gmail.com</a>
+        </p>
+        <p class="text-gray-700 dark:text-gray-300">Location: Loja, Ecuador 🇪🇨</p>
+        <p class="text-gray-700 dark:text-gray-300">
+          Socials: 
+          <a href="https://www.linkedin.com/in/gerardo-ramirez-0493" target="_blank" class="text-indigo-500">LinkedIn</a> | 
+          <a href="https://github.com/gedo1104" target="_blank" class="text-indigo-500">GitHub</a>
+        </p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-gray-600 dark:text-gray-500 py-6">
+    Built with ❤️ Gedo 
+  </footer>
 
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
+  
 </body>
 </html>
