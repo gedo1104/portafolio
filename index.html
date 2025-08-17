@@ -17,10 +17,18 @@
   <!-- HEADER -->
   <header class="max-w-6xl mx-auto p-6 bg-gray-100 dark:bg-neutral-900 rounded-2xl text-center shadow-lg relative">
     <!-- Botón Dark/Light -->
-    <button id="theme-toggle" 
-            class="absolute top-4 right-4 bg-indigo-500 text-white px-3 py-1 rounded-lg text-sm hover:bg-indigo-600 transition">
-      ☀️ / 🌙
-    </button>
+    <div class="absolute top-4 right-4 flex space-x-2">
+      <button id="theme-toggle"
+              class="bg-indigo-500 text-white px-3 py-1 rounded-lg text-sm hover:bg-indigo-600 transition">
+        ☀️ / 🌙
+      </button>
+      <select id="lang-select"
+              class="bg-indigo-500 text-sm px-2 py-1 rounded-lg">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+
+      </select>
+    </div>
 
     <div class="flex flex-col items-center">
       <!-- Avatar -->
@@ -28,16 +36,13 @@
            alt="Avatar" 
            class="w-28 h-28 rounded-full border-4 border-indigo-500 shadow-lg avatar-animate mb-4">
       
-      <h1 class="text-3xl font-bold">
-        Hi, I'm <span class="text-indigo-500">Gerardo Ramírez</span>
+      <h1 id="header-title" class="text-3xl font-bold">
       </h1>
-      <p class="text-gray-600 dark:text-gray-400 mt-2">
-        Software Engineer | Developer web | JavaScript | c# | .net | Angular | docker
-      </p>
-      <a href="mailto:correo@ejemplo.com" 
+      <p id="header-subtitle" class="text-gray-600 dark:text-gray-400 mt-2"></p>
+      <a id="contact-btn" href="mailto:gedo.rm04@gmail.com" 
          class="mt-4 inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-2 rounded-xl transition">
-         Contact Me
       </a>
+
     </div>
   </header>
 
@@ -47,83 +52,45 @@
     <section class="md:col-span-2 space-y-6">
       <!-- About -->
       <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg">
-        <h2 class="text-xl font-semibold text-indigo-500 mb-2">About Me</h2>
-        <p class="text-gray-700 dark:text-gray-300">
-          I am an Ecuadorian systems engineer specializing in web development with experience in both front-end and back-end. I focus on creating websites using modern technologies, applying best practices in architecture and optimization.
-As a self-taught professional, I engage in continuous learning, reinforcing my knowledge and exploring new tools. I am currently delving into Dart and Flutter, key technologies for developing cross-platform mobile applications.
-In my free time, I enjoy reading, technological research, and music, activities that complement my creative and analytical approach.
-          <br>
-            My tools of choice: <span class="font-medium">JavaScript, Angular, SQL Server.</span>
+        <h2  id= "about-title" class="text-xl font-semibold text-indigo-500 mb-2"></h2>
+        <p id="about-text" class="text-gray-700 dark:text-gray-300">
         </p>
+        <br>
+            <p id="about-sub-text"></p> <span class="font-medium">JavaScript, Angular, SQL Server.</span>
       </div>
 
       <!-- Experience -->
       <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg">
-        <h2 class="text-xl font-semibold text-indigo-500 mb-2">Experience</h2>
-        <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-1">
-          <li><strong>Developer Web</strong> — 2021 - Present
-            <span class="block text-sm text-gray-500 dark:text-gray-400">
-              I have participated in multiple web application development projects focused on business management, covering key modules such as payroll, human resources administration, vacation requests, and tax forms for the SRI (Ecuador).
-              I have also contributed to the migration of client-server systems to modern web platforms, improving the scalability, accessibility, and maintenance of solutions.
-              My contribution has included front-end and back-end design and development, database management, and application deployment in production environments, applying best practices in development and optimization.
-            </span>
-          </li>
-
-          <li><strong>Freelance Software Developer</strong> — 2019 2021
-            <span class="block text-sm text-gray-500 dark:text-gray-400">
-              I have participated in the development of specialized web applications, including an online music sales platform aimed at DJs, as well as a system for dentists focused on patient management, schedules, and medical records.
-            </span>
-          </li>
+        <h2 id="experience-title" class="text-xl font-semibold text-indigo-500 mb-2"></h2>
+        <ul id="experience-list"class="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-1">
         </ul>
       </div>
 
       <!-- Studies -->
       <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg">
-        <h2 class="text-xl font-semibold text-indigo-500 mb-2">Studies</h2>
-        <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-1">
-          <li><strong>National University of Loja, Ecuador</strong> — Systems Engineering</li>
-          <li><strong>Mundos E</strong> — Diplomado DevOps</li>
-          <li><strong>José Ochoa León Higher Technological Institute of Pasaje, Ecuador</strong> — Systems Analysis Technologists</li>
+        <h2 id="studies-title" class="text-xl font-semibold text-indigo-500 mb-2"></h2>
+        <ul id="studies-list" class="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-1">
         </ul>
       </div>
 
-      <!-- Projects -->
-      <!-- <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg">
-        <h2 class="text-xl font-semibold text-indigo-500 mb-4">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="bg-gray-200 dark:bg-neutral-800 p-4 rounded-xl shadow-md hover:scale-105 transition transform">
-            <h3 class="text-lg font-bold">Dynamic Form Builder</h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm mt-2">
-              Angular app that loads forms dynamically from database and updates in real-time.
-            </p>
-            <a href="#" class="text-indigo-500 text-sm mt-3 inline-block">View Project →</a>
-          </div>
-
-          <div class="bg-gray-200 dark:bg-neutral-800 p-4 rounded-xl shadow-md hover:scale-105 transition transform">
-            <h3 class="text-lg font-bold">DevOps Pipelines</h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm mt-2">
-              Automated CI/CD pipelines with Docker, Kubernetes and GitHub Actions.
-            </p>
-            <a href="#" class="text-indigo-500 text-sm mt-3 inline-block">View Project →</a>
-          </div>
-        </div>
-      </div> -->
+     
     </section>
 
     <!-- RIGHT COLUMN -->
     <aside class="space-y-6">
       <!-- CV -->
       <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg text-center">
-        <h2 class="text-xl font-semibold text-indigo-500 mb-2">Curriculum Vitae</h2>
-        <p class="text-gray-700 dark:text-gray-300">Download my CV here:</p>
-        <a href="#" 
+        <h2 id="cv-title" class="text-xl font-semibold text-indigo-500 mb-2"></h2>
+        <p id="cv-text" class="text-gray-700 dark:text-gray-300"></p>
+        <a href="/assets/grm.pdf" 
+            id="cv-btn"
            class="mt-4 inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-2 rounded-xl transition">
-           Download CV
+          
         </a>
       </div>
       <!-- Skills -->
 <div class="backdrop-blur-md bg-white/20 dark:bg-black/30 rounded-2xl p-6 shadow-lg border border-white/30">
-  <h2 class="text-xl font-semibold text-indigo-500 mb-4">Skills</h2>
+  <h2 id="skills-title"class="text-xl font-semibold text-indigo-500 mb-4"></h2>
   
   <!-- Lenguajes -->
   <div class="mb-4">
@@ -222,11 +189,11 @@ In my free time, I enjoy reading, technological research, and music, activities 
 
       <!-- Contact -->
       <div class="bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg">
-        <h2 class="text-xl font-semibold text-indigo-500 mb-2">Contact</h2>
+        <h2 id="contact-title" class="text-xl font-semibold text-indigo-500 mb-2"></h2>
         <p class="text-gray-700 dark:text-gray-300">
-          Email: <a href="mailto:correo@ejemplo.com" class="text-indigo-500">gedo.rm04@gmail.com</a>
+          Email: <a href="mailto:gedo.rm04@gmail.com" class="text-indigo-500">gedo.rm04@gmail.com</a>
         </p>
-        <p class="text-gray-700 dark:text-gray-300">Location: Loja, Ecuador 🇪🇨</p>
+        <p id="contact-location" class="text-gray-700 dark:text-gray-300"></p>
         <p class="text-gray-700 dark:text-gray-300">
           Socials: 
           <a href="https://www.linkedin.com/in/gerardo-ramirez-0493" target="_blank" class="text-indigo-500">LinkedIn</a> | 
@@ -237,12 +204,11 @@ In my free time, I enjoy reading, technological research, and music, activities 
   </main>
 
   <!-- FOOTER -->
-  <footer class="text-center text-gray-600 dark:text-gray-500 py-6">
-    Built with ❤️ Gedo 
+  <footer id="footer-text" class="text-center text-gray-600 dark:text-gray-500 py-6">
   </footer>
 
 
   <script src="js/main.js"></script>
-  
+  <script src="js/language.js"></script>
 </body>
 </html>
